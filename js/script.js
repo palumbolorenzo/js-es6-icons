@@ -115,27 +115,12 @@ const arrCards = [
 ];
 
 for (let i = 0; i < arrCards.length; i ++) {
-    //eleContainer.classList.add('.container')
-    //const eleContainer = document.createElement('div'); // <div></div>
-	//eleContainer.classList.add('container');
     const eleMain = document.createElement('div');
 	eleMain.classList.add('row', 'row-cols-auto', 'container', 'd-flex', 'g-5');
     eleContainer.innerHTML += `
         <div class="card col col-2">
-            <i class="${arrCards[i].prefix}solid ${arrCards[i].prefix}${arrCards[i].name}"></i>
+            <i class="${arrCards[i].prefix}solid ${arrCards[i].prefix}${arrCards[i].name}" style="color:${arrCards[i].color}"></i>
             <p>${arrCards[i].name}</p>
         </div>
     `;
 }
-/*
-for (let i = 0; i < employees.length; i++) {
-    const employee = employees[i];
-    employee["name"]; // employee.name
-    eleData.innerHTML += 
-        `<div class="card">
-            <img class="pic" src="${employee.pic}">
-            <div class="h4">${employee.name}</div>
-            <div class="p">${employee.profession}</div>
-        </div>`;
-};
-*/

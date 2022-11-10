@@ -12,6 +12,10 @@ section {
     justify-content: center;
 }
 
+h3 {
+    margin: 1rem;
+}
+
 main {
     background-color: #DDDDDD;
 }
@@ -30,6 +34,7 @@ main {
     width: 100px;
     height: 100px;
     border-radius: 10px;
+    box-shadow: 3px 3px grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,4 +43,14 @@ main {
 
 p {
     margin-top: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#container {
+    margin: 0 auto;
+
 }
