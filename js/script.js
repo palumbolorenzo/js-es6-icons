@@ -116,7 +116,7 @@ const arrCards = [
 
 for (let i = 0; i < arrCards.length; i ++) {
     const eleMain = document.createElement('div');
-	eleMain.classList.add('row', 'row-cols-auto', 'container', 'd-flex', 'g-5');
+	eleMain.classList.add('container', 'd-flex');
     eleContainer.innerHTML += `
         <div class="card col col-2">
             <i class="${arrCards[i].prefix}solid ${arrCards[i].prefix}${arrCards[i].name}" style="color:${arrCards[i].color}"></i>
